@@ -3,6 +3,7 @@
 
 <html>
 <head> 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="icon" type="image/png" href="favicon.png" />
 	  <meta charset="UTF-8">
 	<title>𝙻 - 𝚊 𝚑 𝚖 𝚎 𝚍</title>
@@ -23,7 +24,65 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 
 </head>
+
+	<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a style="color: #0047A0 ;" href="#Home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a style="color: #0047A0 ;" href="#About" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a style="color: #0047A0 ;" href="#Skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SKILLS</a>
+    <a style="color: #0047A0 ;" href="#Contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a style="color: #0047A0 ;" onclick ="Search()" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+	   <a  style="color: #0047A0 !important;" href ="../kr/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-language"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#About" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+    <a href="#Skills" class="w3-bar-item w3-button" onclick="toggleFunction()"> SKILLS</a>
+    <a href="#Contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
+    <a onclick ="Search()" class="w3-bar-item w3-button"> SEARCH</a>
+  </div>
+</div>
 <script>
 
 document.write(unescape('%3Cbody%3E%0A%09%3Cscript%3E%0Avar%20audio%20%3D%20document.createElement%28%22AUDIO%22%29%0Adocument.body.appendChild%28audio%29%3B%0Aaudio.src%20%3D%20%221.mp3%22%0A%0Adocument.body.addEventListener%28%22mousemove%22%2C%20function%20%28%29%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20audio.play%28%29%0A%7D%29%0A%3C/script%3E%0A%3Cheader%3E%0A%09%3Cdiv%20id%3D%22homeFullScreen%22%3E%0A%09%09%3Cdiv%20class%3D%22header-text%22%3E%0A%09%09%09%3Ch1%20style%3D%22color%3A%23372d10%3B%22%3EUpdates%3C/h1%3E%0A%09%09%09%3Cdiv%20%20style%3D%22background-color%3A%20%23342d0d%3B%22%20class%3D%22vertical-line%22%3E%3C/div%3E%0A%09%09%09%0A%3Ca%20id%3D%22bst%22%20href%3D%22%22%20class%3D%22fa%20fa-facebook%22%3E%3C/a%3E%0A%3Ca%20id%3D%22bst%22%20href%3D%22%22%20class%3D%22fa%20fa-twitter%22%20%3E%3C/a%3E%0A%3Ca%20id%3D%22bst%22%20href%3D%22%22%20class%3D%22fa%20fa-youtube%22%3E%3C/a%3E%0A%3Ca%20id%3D%22bst%22%20href%3D%22%22%20class%3D%22fa%20fa-instagram%22%3E%3C/a%3E%0A%09%09%09%0A%09%09%09%3Cfooter%3E%0A%09%3Cspan%20style%3D%22color%3Aaliceblue%3B%22%20class%3D%22copyright%22%3E%26%23169%3B%20Design%20By%20%3Ca%20href%3D%22%231%22%3ELabiade%20ahmed%3C/a%3E%3C/span%3E%0A%3C/footer%3E%0A%09%0A%09%09%09%0A%09%09%3C/div%3E%3C%21--%20End%20HeaderText%20--%3E%0A%09%3C/div%3E%3C%21--%20End%20homeFullScreen%20--%3E%0A%3C/header%3E%3C%21--%20End%20Header%20--%3E%0A%0A%0A%3C%21--%20Footer%20--%3E%0A%0A%0A%0A%0A%3C%21--%20Main%20JS%20--%3E%0A%3Cscript%20type%3D%22text/javascript%22%20src%3D%22assets/js/jquery-main.js%22%3E%3C/script%3E%0A%0A%3C%21--%20Bootstrap%20JS%20--%3E%0A%3Cscript%20type%3D%22text/javascript%22%20src%3D%22assets/js/bootstrap.min.js%22%3E%3C/script%3E%0A%0A%3C%21--%20Animation%20JS%20--%3E%0A%3Cscript%20type%3D%22text/javascript%22%20src%3D%22assets/js/wow.min.js%22%3E%3C/script%3E%0A%0A%3C%21--%20Custom%20JS%20--%3E%0A%3Cscript%20type%3D%22text/javascript%22%20src%3D%22assets/js/custom.js%22%3E%3C/script%3E%0A%0A%0A%3C/body%3E%0A%3C/html%3E%0A'));
+</script>
+
+
+	<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
