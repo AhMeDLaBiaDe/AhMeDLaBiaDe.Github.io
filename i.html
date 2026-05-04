@@ -39,7 +39,8 @@
 </div>
 
 <!-- Main Content -->
-<div id="main-content" style="display: none;">
+<!-- <div id="main-content" style="display: none;">-->
+<div id="main">
    
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -126,7 +127,7 @@ document.body.addEventListener("mousemove", function () {
 
 window.addEventListener('load', () => {
     const splash = document.getElementById('splash-screen');
-    const content = document.getElementById('main-content');
+    const content = document.getElementById('main');
 
     setTimeout(() => {
         // 1. Start the fade out transition
@@ -135,7 +136,6 @@ window.addEventListener('load', () => {
         // 2. Remove from DOM and show content after fade finishes (0.5s)
         setTimeout(() => {
             splash.style.display = 'none';
-            content.style.display = 'block';
         }, 500); 
 
     }, 4000); // 4 seconds
