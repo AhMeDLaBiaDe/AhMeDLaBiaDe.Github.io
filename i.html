@@ -1,0 +1,211 @@
+<html>
+<head> 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	  <meta charset="UTF-8">
+	<title>𝙻 - 𝚊 𝚑 𝚖 𝚎 𝚍</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Goggle Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css">
+
+	<!-- Font Css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Animation Css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+</head>
+
+			   
+<style>
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212; /* Dark theme */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease; /* Smooth fade out */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+/* Simple Spinner */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+	
+<body>
+
+
+
+
+
+
+<!-- Splash Screen -->
+<div id="splash-screen">
+    <div class="logo-container">
+        <h1>A-L</h1>
+        <div class="loader"></div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" style="display: none;">
+   
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i style="color: #3a3418;" class="fa fa-bars"></i>
+    </a>
+     <a style="color: #42381D ;" href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Home</a>
+    <a style="color: #42381D ;" href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+ <a style="color: #0047A0 ;" href="https://www.google.com/search?q=Ahmed+Labiade" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-brown">
+      <i class="fa fa-search" style="color: #675a2c;"></i>
+    </a>   
+  </div>
+
+	
+
+  <!-- Navbar on small screens -->
+   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Home</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Contact</a>
+    <a href="https://www.google.com/search?q=Ahmed+Labiade" class="w3-bar-item w3-button"> Search</a>
+  </div>
+</div>
+
+
+
+	<script>
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "1.mp3"
+
+document.body.addEventListener("mousemove", function () {
+      
+      audio.play()
+})
+</script><audio src="1.mp3"></audio>
+<header>
+	<div id="homeFullScreen" style="height: 473px; width: 1689px;">
+		<div class="header-text">
+			<h1 style="color:#372d10;">Updates</h1>
+			<div style="background-color: #342d0d;" class="vertical-line"></div>
+			
+<a id="bst" href="" class="fa fa-facebook"></a>
+<a id="bst" href="" class="fa fa-twitter"></a>
+<a id="bst" href="" class="fa fa-youtube"></a>
+<a id="bst" href="" class="fa fa-instagram"></a>
+			
+			<footer>
+	<span style="color:aliceblue;" class="copyright">© Design By <a href="#1">Labiade ahmed</a></span>
+</footer>
+	
+			
+		</div><!-- End HeaderText -->
+	</div><!-- End homeFullScreen -->
+</header><!-- End Header -->
+
+
+<!-- Footer -->
+
+
+
+
+<!-- Main JS -->
+<script type="text/javascript" src="assets/js/jquery-main.js"></script>
+
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- Animation JS -->
+<script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+<!-- Custom JS -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</div>
+
+</body>
+
+
+
+
+
+<script>
+
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    const content = document.getElementById('main-content');
+
+    setTimeout(() => {
+        // 1. Start the fade out transition
+        splash.style.opacity = '0';
+
+        // 2. Remove from DOM and show content after fade finishes (0.5s)
+        setTimeout(() => {
+            splash.style.display = 'none';
+            content.style.display = 'block';
+        }, 500); 
+
+    }, 4000); // 4 seconds
+});
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+</html>
