@@ -39,7 +39,7 @@
 </div>
 
 <!-- Main Content -->
-<!-- <div id="main-content" style="display: none;">-->
+ <div id="main-content" style="display: none;">
    
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -97,6 +97,7 @@ document.body.addEventListener("mousemove", function () {
 
 
 <!-- Footer -->
+</div>
 
 
 
@@ -124,20 +125,7 @@ document.body.addEventListener("mousemove", function () {
 
 <script>
 
-window.addEventListener('load', () => {
-    const splash = document.getElementById('splash-screen');
 
-    setTimeout(() => {
-        // 1. Start the fade out transition
-        splash.style.opacity = '0';
-
-        // 2. Remove from DOM and show content after fade finishes (0.5s)
-        setTimeout(() => {
-            splash.style.display = 'none';
-        }, 500); 
-
-    }, 4000); // 4 seconds
-});
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -166,6 +154,20 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+	window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+
+    setTimeout(() => {
+        // 1. Start the fade out transition
+        splash.style.opacity = '0';
+
+        // 2. Remove from DOM and show content after fade finishes (0.5s)
+        setTimeout(() => {
+            splash.style.display = 'none';
+        }, 500); 
+
+    }, 4000); // 4 seconds
+});
 </script>
 
 
